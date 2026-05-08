@@ -1,0 +1,95 @@
+:root {
+    --bd-green: #006a4e;
+    --bd-red: #f42a41;
+    --dark: #1a1a1a;
+    --gray: #f9f9f9;
+}
+
+body {
+    font-family: 'SolaimanLipi', Arial, sans-serif;
+    margin: 0;
+    background: #ececec;
+}
+
+.emergency-bar {
+    background: var(--bd-red);
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.emergency-bar a { color: yellow; text-decoration: none; margin: 0 10px; }
+
+header {
+    background: var(--bd-green);
+    color: white;
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+
+.logo span { color: var(--bd-red); font-weight: 900; }
+
+#live-clock { background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; }
+
+.main-content { padding: 20px 5%; }
+
+.stats-container { display: flex; gap: 15px; margin-bottom: 20px; }
+
+.stat-card {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.search-box { margin-bottom: 30px; }
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.cat-section { margin-bottom: 40px; }
+
+.cat-section h2 { border-left: 5px solid var(--bd-green); padding-left: 10px; font-size: 20px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+}
+
+.card:hover {
+    background: var(--bd-green);
+    color: white;
+    transform: scale(1.05);
+}
+
+footer { background: var(--dark); color: #888; text-align: center; padding: 30px; margin-top: 50px; }
